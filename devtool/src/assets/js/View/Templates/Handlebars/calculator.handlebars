@@ -1,0 +1,22 @@
+<div class="row jumbotron">
+    <h1 class="text-center col-xl-12 col-lg-12 col-md-12 col-xs-12">Basic Calculator</h1>
+    <form class="col-xl-6 col-lg-6 col-md-8 col-xs-8">
+        <div class="form-group">
+            <label for="number-1">{{number1Label}}</label>
+            <input type="number" class="form-control" id="number-1" placeholder="Enter Number 1"
+                onkeydown="javascript: return event.keyCode == 69 ? false : true">
+        </div>
+        <div class="form-group">
+            <label for="number-2">{{number2Label}}</label>
+            <input type="number" class="form-control" id="number-2" placeholder="Enter Number 2"
+                onkeydown="javascript: return event.keyCode == 69 ? false : true">
+        </div>
+        <button id="add-submit" type="submit" class="btn btn-primary">{{submitAddLabel}}</button>
+        <button id="sub-submit" type="submit" class="btn btn-primary">{{submitSubLabel}}</button>
+        <button id="mul-submit" type="submit" class="btn btn-primary">{{submitMulLabel}}</button>
+        <button id="div-submit" type="submit" class="btn btn-primary">{{submitDivLabel}}</button>
+        <button id="mod-submit" type="submit" class="btn btn-primary">{{submitModLabel}}</button>
+        <button id="submit-clear" type="submit" class="btn btn-primary">{{submitClearLabel}}</button>
+    </form>
+    <div id="result" class="col-xl-6 col-lg-6 col-md-4 col-xs-4"></div>
+</div>
