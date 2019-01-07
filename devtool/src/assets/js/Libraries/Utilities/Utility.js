@@ -1,4 +1,4 @@
-import Event from "./helpers/event";
+import Event from "./Helpers/event";
 
 export function ready() {
     return Event.ready.apply(this, arguments);
